@@ -1,8 +1,3 @@
-import React, { Component } from 'react';
-
-import People from './components/People';
-//import './data/people.js';
-
 const data = [{
   id: 1,
   name: "Maria Montti",
@@ -68,21 +63,3 @@ const data = [{
   name: "Pal Allan",
   type: "photographer"
 }];
-
-
-class App extends Component {
-
-  render() {
-
-    return (
-      <div>
-      MODELs
-      <People filter={"model"} data={data}/>
-      PHOTOGRAPHERs
-      <People filter={"photographer"} data={data}/>
-      </div>
-    );
-  }
-}
-
-export default App;
